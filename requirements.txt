@@ -1,0 +1,18 @@
+# 存储桶浏览器依赖
+# Storage Browser Dependencies
+
+# 核心依赖
+tkinter  # Python内置，通常不需要单独安装
+Pillow>=10.0.0
+requests>=2.31.0
+
+# 文档处理依赖
+PyMuPDF>=1.23.0      # PDF解析
+python-docx>=1.1.0    # DOCX解析
+openpyxl>=3.1.2       # XLSX解析
+python-pptx>=0.6.23   # PPTX解析
+xlrd==1.2.0           # XLS解析（必须是1.x版本，2.0+不支持.xls格式）
+
+# 可选依赖（用于DOC文件）
+textract>=1.6.5       # 可选：DOC文件解析
+python-docx2txt>=0.8   # 可选：DOCX文件解析
